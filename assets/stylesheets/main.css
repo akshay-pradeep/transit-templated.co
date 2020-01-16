@@ -1,0 +1,462 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* .body {
+    font-family: 'Fira Sans', sans-serif;
+} */
+/* container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a { 
+    text-decoration: none;
+}
+  
+
+/* header */
+.header {
+    width: 100%;
+    background: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+} 
+.logo-and-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    padding: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation {
+    padding: 30px;
+}
+
+.navbar {
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    color: #9da2a5;
+}
+
+.btn {
+    border-radius : 25px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.btn-text {
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+/* hero section */
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero-heading {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 100px 0 30px 0;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.hero-subheading {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    padding: 0 0 30px 0;
+    color: white;
+}
+
+.hero-btn {
+    border-radius : 25px;
+    background-color: #45add4;
+    margin-bottom: 200px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-text2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    /* margin: 30px 50px 30px 50px; */
+    color: white;
+    text-align: center;
+}
+
+/* main section */
+
+/* section 2 */
+.section2 {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.heading {
+    display: block;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 100px 0 10px 0;
+    color: #474747;
+}
+
+.tagline {
+    display: block;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 20px 0 50px 0;
+    color: #878787
+}
+
+/* column */
+.col-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.col {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(156, 151, 151);
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+}
+.col-heading {
+    font-size: 22px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    color: #858585;
+    padding: 25px 0 25px 0;
+}
+
+.col-text {
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+/* icon */
+
+i {
+    font-size: 50px;
+    color: white;
+}
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.icon-wrapper.col1 {
+    background-color: #45add4;
+}
+.icon-wrapper.col2 {
+    background-color: #add33f;
+}
+.icon-wrapper.col3 {
+    background-color: #d43c62;
+}
+
+/* section 3  Contact */
+.section3 {
+    width: 100%;
+}
+
+.contact-wrapper {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.far.fa-user-circle {
+    color: black;
+    font-size: 80px;
+}
+.contact-info {
+    padding-left: 20px;
+}
+.contact.heading {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0 0;
+}
+.paragraph {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.paragraph-2 {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 32px 0;
+}
+.contact-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-2 {
+    border-radius : 25px;
+    background-color: #45add4;
+    margin-bottom: 100px;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* section 4 Form */
+
+.section4 {
+    width: 100%;
+    background-color: #45add4;
+}
+.form.heading {
+    color: white;
+    padding: 60px 0 10px 0;
+}
+.form.tagline {
+    color: white;
+    padding: 0 0 50px 0;
+}
+
+input {
+    height: 50px;
+    width: 380px;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 15px;
+    padding: 20px ;
+}
+textarea {
+    height: 200px;
+    width:800px;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+    resize: none;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form.btn-2 {
+    background-color: #383b44;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: #383b44;
+}
+
+.links.col {
+    width: 23%;
+    border: none;
+    background-color: #383b44;
+}
+
+.links.col-heading {
+    color: white;
+}
+
+.links.col-text {
+    color: white;
+}
+
+.links-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.copytext {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+.icon {
+    font-size: 30px;
+}
+.icon.fab.fa-facebook-f {
+    color: #39599f;
+}
+.icon.fab.fa-twitter {
+    color: #41abe5;
+}
+.icon.fab.fa-google-plus-g {
+    color: #c82e29;
+}
+.icon.fab.fa-linkedin-in {
+    color: white;
+}
+
+/* responsive for smaller displays */
+@media screen and (max-width: 500px) {
+    .container {
+        padding:25px;
+    }
+    /* header */
+    .header {
+        background:linear-gradient(90deg, #232526 0%,#414345 100% );
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .hero-container {
+        flex-basis: 100%;
+    }
+    .hero-btn {
+        margin-bottom: 50px;
+    }
+    .hero-heading {
+        font-size: 32px;
+    }
+    .hero-subheading {
+        font-size: 20px;
+        text-align: center;
+    }
+    .navigation {
+        display: none;
+    }
+    .col-wrapper {
+        flex-direction: column;
+    }
+    .col {
+        width : 100%;
+    }
+    .form-control {
+        width:100%;
+        flex-direction: column;
+    }
+    .contact-wrapper {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    input {
+        width: 100%;
+        margin: 15px 0;
+    }
+    textarea {
+        width: 100%;
+
+    }
+    .links.col {
+        width: 100%;
+    }
+    .links-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .copytext {
+        margin-bottom: 25px;
+    }
+}
